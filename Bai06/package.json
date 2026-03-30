@@ -1,0 +1,9 @@
+{
+  "name": "bai06-multistage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'build done'",
+    "start": "node index.js"
+  }
+}

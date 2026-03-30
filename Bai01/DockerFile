@@ -1,0 +1,20 @@
+# dùng node 18
+FROM node:18
+
+# tạo thư mục app
+WORKDIR /app
+
+# copy package trước (optimize cache)
+COPY package.json .
+
+# install dependency (nếu có)
+RUN npm install
+
+# copy source code
+COPY . .
+
+# expose port
+EXPOSE 3000
+
+# chạy app
+CMD ["npm", "start"]
